@@ -7,6 +7,7 @@ class CreateProfiles < ActiveRecord::Migration[6.1]
       t.string :avatar_url
       t.string :facebook
       t.belongs_to :author, null: false, foreign_key: true
+      # t.integer :author_id
 
       t.timestamps
     end
